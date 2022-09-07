@@ -1,0 +1,92 @@
+﻿@page
+@model WebAppDETAug2022.Pages.HelloWebModel
+@{
+}
+
+<h2>Welcome to my Site!!</h2>
+<h3>Happy @DateTime.Today.DayOfWeek</h3>
+
+Page says @Model.Message
+<p> Discount for today @Model.Discount%</p>
+<h3> Offer valid till @DateTime.Today.AddDays(3)</h3>
+
+<a href="mailto:chandana.gunaga@sonata-software.com">chandana.gunaga@sonata-software.com</a>
+
+@{
+    string message = "foreignObject example with Scalable Vector Graphics (SVG)";
+}
+
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    
+    <rect x="0" y="0" rx="10" ry="10" width="200" height="200" stroke="black"
+          fill="none" />
+    <foreignObject x="20" y="20" width="160" height="160">
+        <p>@message</p>
+    </foreignObject>
+</svg>
+
+<p>Last week this time: @(DateTime.Now - TimeSpan.FromDays(7))</p>
+@*
+@{
+    var joe = new Person("Joe", 33);
+}
+
+<p>Age@(joe.Age)</p>*@
+
+@Html.Raw("<span>Hello World</span>")
+
+
+@*Razor Code Blocks*@
+
+@{
+    var quote = "The future depends on what you do today. - Mahatma Gandhi";
+}
+
+<p>@quote</p>
+
+@{
+    quote = "Hate cannot drive out hate, only love can do that. - Martin Luther King, Jr.";
+}
+
+<p>@quote</p>
+
+@{
+    void RenderName(string name)
+    {
+        <p>Name: <strong>@name</strong></p>
+    }
+
+    RenderName("Mahatma Gandhi");
+    RenderName("Martin Luther King, Jr.");
+}
+
+@* Implicit Transitions*@
+
+@{
+    var inCSharp = true;
+    <p>Now in HTML, was in C# @inCSharp</p>
+}
+
+    @*For Loop*@
+
+@{
+    string[] members = { "Jani", "Hege", "Kai", "Jim" };
+}
+
+
+
+@foreach (var person in members)
+{
+   
+    <p>@person</p>
+}
+
+@{
+    var value = 12;
+}
+
+@if (@value % 2 == 0)
+{
+    <p>The value was even.</p>
+}
+
