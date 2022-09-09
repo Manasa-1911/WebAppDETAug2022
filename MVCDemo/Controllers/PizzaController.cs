@@ -51,5 +51,22 @@ namespace MVCDemo.Controllers
             PizzaService.Delete(p.Id);
              return RedirectToAction("List");
         }
+
+        //public IActionResult Edit(int id)
+        //{
+        //    var p = PizzaService.Where(p => p.Id == id).FirstOrDefault();
+
+        //    return View();
+        //}
+        [HttpPost]
+        public IActionResult Edit(Pizza pizza)
+        {
+            
+            var name=pizza.Name;
+            var price = pizza.Price;
+            PizzaService.Update(pizza);
+            return RedirectToAction("List");
+
+        }
     }
 }

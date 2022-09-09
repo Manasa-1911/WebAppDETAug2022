@@ -8,7 +8,9 @@
         background-color:pink;
     }
 </style>
-No. of Pizzas available=@Model.Count
+
+<partial name="_PizzaList" />
+@*No. of Pizzas available=@Model.Count
 <div class="table-responsive">
     <p>Details</p>
     <table class="table">
@@ -17,4 +19,4 @@ No. of Pizzas available=@Model.Count
             <tr><td>@p.Name</td></tr>
         }
     </table>
-</div>
+</div>*@
