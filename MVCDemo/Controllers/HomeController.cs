@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MVCDemo.Filter;
 using MVCDemo.Models;
 using System.Diagnostics;
 
@@ -19,6 +20,12 @@ namespace MVCDemo.Controllers
             ViewBag.Location = loc;
             ViewBag.Contact = contact;
             return View();
+        }
+
+        [MyLog]
+        public string[] retests()
+        {
+            return new string[] { "C#=12-Sep", "Tsql=13-Sep" };
         }
 
         public IActionResult Index()
