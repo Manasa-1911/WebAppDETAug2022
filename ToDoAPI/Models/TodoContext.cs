@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Diagnostics.CodeAnalysis;
-using ToDoAPI.Models;
+using TodoAPI.Models;
 
 namespace TodoApi.Models
 {

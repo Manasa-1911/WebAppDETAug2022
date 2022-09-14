@@ -1,9 +1,4 @@
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using TodoAPI.Data;
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<TodoAPIContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("TodoAPIContext") ?? throw new InvalidOperationException("Connection string 'TodoAPIContext' not found.")));
 
 // Add services to the container.
 
@@ -20,9 +15,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-app.UseDefaultFiles();
-app.UseStaticFiles();
-
 
 app.UseHttpsRedirection();
 
