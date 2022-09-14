@@ -15,9 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoAPI", "TodoAPI\TodoAPI.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OData6Demo", "OData6Demo\OData6Demo.csproj", "{67A14287-3B94-44E7-B31A-5F215EA5814A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstUnitTests", "MyFirstUnitTests\MyFirstUnitTests.csproj", "{5B155EA3-6364-4649-B270-1B6397E7D2F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstUnitTests", "MyFirstUnitTests\MyFirstUnitTests.csproj", "{5B155EA3-6364-4649-B270-1B6397E7D2F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLib_Pizza", "ClassLib_Pizza\ClassLib_Pizza.csproj", "{CE8345DA-86EB-44C5-9A87-8C8309CB9313}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLib_Pizza", "ClassLib_Pizza\ClassLib_Pizza.csproj", "{CE8345DA-86EB-44C5-9A87-8C8309CB9313}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject_ClassLibPizza", "TestProject_ClassLibPizza\TestProject_ClassLibPizza.csproj", "{7D69A796-B4C5-4A48-8480-473A12D8231D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{CE8345DA-86EB-44C5-9A87-8C8309CB9313}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE8345DA-86EB-44C5-9A87-8C8309CB9313}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE8345DA-86EB-44C5-9A87-8C8309CB9313}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D69A796-B4C5-4A48-8480-473A12D8231D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D69A796-B4C5-4A48-8480-473A12D8231D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D69A796-B4C5-4A48-8480-473A12D8231D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D69A796-B4C5-4A48-8480-473A12D8231D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
